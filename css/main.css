@@ -1,0 +1,292 @@
+@font-face {
+    font-family: "LabGrotesque-Medium";
+    src: url("../fonts/lab-grotesque/LabGrotesque-Medium.ttf");
+}
+
+@font-face {
+    font-family: "LabGrotesque-Regular";
+    src: url("../fonts/lab-grotesque/LabGrotesque-Regular.ttf");
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;;
+}
+
+body {
+    margin: 0;
+}
+
+.bgMain {
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+}
+
+.bgClicked {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    padding: 16px 32px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: "LabGrotesque-Medium", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: transparent;
+}
+
+.btn:hover {
+    background: white;
+    cursor: pointer;
+    color: Black;
+}
+
+.btn.btnDisabled {
+    background: #BEC5CC;
+}
+
+.form-container {
+    top: 15vh;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 30px;
+    width: 552px;
+    background: white;
+}
+
+.closeContainer {
+    position: absolute;
+    right: 27px;
+    top: 27px;
+}
+
+.closeContainer svg {
+    fill: #EA0029;
+}
+
+.closeContainer:hover {
+    cursor: pointer;
+}
+
+.closeContainer:hover svg {
+    fill: #F53A31;
+}
+
+.title {
+    font-family: "LabGrotesque-Medium", sans-serif;
+    font-size: 28px;
+    color: #000000;
+    margin: 0 0 16px;
+    line-height: 40px;
+}
+
+.description {
+    max-width: 425px;
+    font-family: "LabGrotesque-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #808080;
+    margin: 0 0 24px;
+}
+
+#salary {
+    font-family: "LabGrotesque-Medium", sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin: 0 0 8px;
+    line-height: 24px;
+}
+
+#inputSalary {
+    border: 1px solid #DFE3E6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    padding: 8px 10px;
+    font-family: "LabGrotesque-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+#inputSalary:hover {
+    border: 1px solid #000000;
+}
+
+#inputSalary::placeholder {
+    font-family: "LabGrotesque-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #BEC5CC;
+}
+
+#count {
+    font-family: "LabGrotesque-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #EA0029;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#count:hover {
+    color: #F53A31;
+}
+
+#less {
+    margin-top: 24px;
+}
+
+#lessText {
+    font-family: "LabGrotesque-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin-right: 32px;
+}
+
+.lessButton {
+    padding: 6px 12px;
+    border-radius: 50px;
+    background: #EEF0F2;
+    color: Black;
+    border: none;
+    outline: none;
+    font-family: "LabGrotesque-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 16px;
+}
+
+.lessButton:hover {
+    cursor: pointer;
+    background: #EA0029;
+    box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
+    color: #FFFFFF;
+}
+
+.lessButton.selected {
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
+    color: #FFFFFF;
+}
+
+#add {
+    margin-top: 40px;
+    padding: 16px 0;
+    width: 100%;
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
+    border-radius: 6px;
+    font-family: "LabGrotesque-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+}
+
+#add:hover {
+    cursor: pointer;
+    background: #EA0029;
+    box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
+}
+
+#priceTitle {
+    font-family: "LabGrotesque-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin: 16px 0;
+}
+
+.labelText {
+    font-family: "LabGrotesque-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.labelText span {
+    color: #BEC5CC;
+}
+
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkboxContainer {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 1px solid #DFE3E6;
+    margin-right: 11px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkboxContainer:hover {
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.checkboxContainer.checked {
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    border: none;
+}
+.pay {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #DFE3E6;
+    margin-bottom: 16px;
+}
+
+.pay:last-child {
+    margin-bottom: 0;
+}
+
+label.label {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+
+.none {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
